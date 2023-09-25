@@ -85,11 +85,11 @@
   Lesson Title
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 10%" class="percentage">
-    10%
+<aside class="col-md-12 lesson-progress"><div style="width: 20%" class="percentage">
+    20%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 10%" aria-valuenow="10" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 20%" aria-valuenow="20" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -152,31 +152,23 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
-<div class="accordion accordion-flush" id="accordionFlushcurrent">
+<div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
-    <div class="accordion-header" id="flush-headingcurrent">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
-        <span class="visually-hidden">Current Chapter</span>
-        <span class="current-chapter">
-        2. Types of content in XR experiences
-        </span>
-      </button>
+    <div class="accordion-header" id="flush-heading3">
+        <a href="immersive-vs-panoramic.html">2. Type of Content</a>
     </div><!--/div.accordion-header-->
-        
-    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
-      <div class="accordion-body">
-        <ul><li><a href="#types-of-content-in-xr-experiences-applications">Types of content in XR experiences / applications</a></li>
-<li><a href="#stereoscopic-versus-no-stereoscopic-content">Stereoscopic versus No-Stereoscopic Content</a></li>
-        </ul></div><!--/div.accordion-body-->
-    </div><!--/div.accordion-collapse-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
-<div class="accordion accordion-flush" id="accordionFlush4">
+<div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading4">
-        <a href="immersive-vs-panoramic.html">3. Immersive vs Panoramic</a>
+    <div class="accordion-header" id="flush-headingcurrent">
+        <span class="visually-hidden">Current Chapter</span>
+        <span class="current-chapter">
+        3. Types of content in XR experiences
+        </span>
+      
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -287,17 +279,17 @@
         <!-- START: inst/pkgdown/templates/content-instructor.html -->
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="../instructor/introduction.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="../instructor/immersive-vs-panoramic.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link" href="../instructor/immersive-vs-panoramic.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link float-end" href="../instructor/degrees-of-freedom.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="../instructor/introduction.html" rel="prev">
+        <a class="chapter-link" href="../instructor/immersive-vs-panoramic.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
-          Previous: Introduction
+          Previous: Type of Content
         </a>
-        <a class="chapter-link float-end" href="../instructor/immersive-vs-panoramic.html" rel="next">
-          Next: Immersive vs... 
+        <a class="chapter-link float-end" href="../instructor/degrees-of-freedom.html" rel="next">
+          Next: Degrees of Freedom... 
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -317,52 +309,52 @@
 
         
 
-<section id="types-of-content-in-xr-experiences-applications"><h2 class="section-heading">Types of content in XR experiences / applications<a class="anchor" aria-label="anchor" href="#types-of-content-in-xr-experiences-applications"></a>
-</h2>
-<hr class="half-width"><p>Distinction is made between environments which incorporate different
-type of content, in particular:</p>
-<ul><li>Vectorised-3D environments, as in an interactive virtual
-environment</li>
-<li>Image-renderings, as in 360 images</li>
-</ul><div class="section level3">
-<h3 id="vectorised-3d-environment">Vectorised-3D environment<a class="anchor" aria-label="anchor" href="#vectorised-3d-environment"></a></h3>
-<p>These experiences are usually developed within a vector-formatted 3D
-environment, such as the full 3D scene (inc. objects in the scene), as
-well as the camera, and lighting information.</p>
-<p>It allows for a more immersive experience if a user can fully
-interact with this visually-rich environment.</p>
-<p>It also allows for interactivity as the environment reacts to the
-users’ actions.</p>
-<p>Resolution of the image usually depends on the rendering mechanism of
-such environments.</p>
-<figure><img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Immersive_environment_-_3D.jpg" alt="Example of vectorised-3D environment." class="figure mx-auto d-block"><figcaption>Example of vectorised-3D environment showing a user
-in an interactive and immersive environment © National Institute of
-Standards and Technology</figcaption></figure></div>
-<div class="section level3">
-<h3 id="immersive-image-renders">Immersive image-renders<a class="anchor" aria-label="anchor" href="#immersive-image-renders"></a></h3>
-<p>These environments are developed using 360 panoramas which record an
-environment from a central position with a view in every direction.</p>
-<p>Users can rotate the camera view to select the direction to look at.
-Yet they cannot move within the environnment.</p>
-<p>These experiences can be easier/cheaper to produce an distribute as
-they only require a rendered photograph or video to be displayed.</p>
-<p>However, allowing for high-quality imagery or interactivity might
-incurr in a longer/more expensive development cycle. But also for an
-enhanced user experience.</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/360%C2%B0_Image_at_the_Thean_Hou_Temple_%2849496080737%29.jpg" alt="Example of 360° panoramic image." class="figure"> For high-quality resolution,
-cameras such as the <a href="https://onlinemanual.insta360.com/pro2/en-us/basic/prepare/about" class="external-link">Insta360
-Pro2</a>, will produce an image of 7680 x 7680 (8K) pixles, and video of
-7680 x 3840 pixels. These cameras can also support stereoscopic
-images.</p>
+<div id="challenge-distributing-xr-experiences" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-</section><section id="stereoscopic-versus-no-stereoscopic-content"><h2 class="section-heading">Stereoscopic versus No-Stereoscopic Content<a class="anchor" aria-label="anchor" href="#stereoscopic-versus-no-stereoscopic-content"></a>
-</h2>
-<hr class="half-width"><p>Despite the modality of Distribution, content can be acessed via
-stereoscopic or non-stereoscopic mode.</p>
-<p>If the experience can be accessed in stereoscopic mode, then adequate
-hardware, such as a VR headset or stereoscopic glasses, willl be
-required by the user. This will impose additional requirements for the
-user in terms of hardware, and its capabilities to acess content.</p>
+<div id="challenge-distributing-xr-experiences" class="callout-inner">
+<h3 class="callout-title">Challenge: Distributing XR experiences<a class="anchor" aria-label="anchor" href="#challenge-distributing-xr-experiences"></a>
+</h3>
+<div class="callout-content">
+<p>Explore how various types of experiences can be distributed to reach
+a wide number of users.</p>
+<p>Reflect on how the distrubution platform might impact (or not) the
+amount of potential users.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Output
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>There are many different platforms for distributing XR experiences.
+Here is a list of the most popular ones.</p>
+<ul><li><a href="https://www.meta.com/en-gb/experiences/" class="external-link">Meta
+Quest</a></li>
+<li><a href="https://store.steampowered.com/" class="external-link">Valve Steam</a></li>
+<li><a href="https://vr.youtube.com/" class="external-link">VR YouTube</a></li>
+<li><a href="https://www.facebook.com/Facebook360/" class="external-link">Facebook
+360</a></li>
+</ul><p>Note that they distribute content both through a web browser and
+through a device such as a phone or headset.</p>
+<p>Beside these platforms, XR experiences can be installed as apps on
+mobile phones through platforms such as Google and Apple apps:</p>
+<ul><li><a href="https://apps.apple.com/" class="external-link">Apple App Store</a></li>
+<li><a href="https://apps.microsoft.com/store/apps" class="external-link">Windows App
+Store</a></li>
+<li><a href="https://play.google.com/" class="external-link">Google App Store</a></li>
+</ul><p>In most of these cases, the potential users is dependent on the
+specific device they target.</p>
+</div>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -373,9 +365,9 @@ user in terms of hardware, and its capabilities to acess content.</p>
 <div class="callout-content">
 <ul><li>XR experiences can involve 3D environments or 360 images</li>
 <li>Distribution will depend on the modality, as well as whether the
-content is stereoscopic or not</li>
-<li>The hardware that is available to users will depend on the type of
-content</li>
+content is stereoscopic or not.</li>
+<li>The hardware that is available to users will have an impact on the
+functionality which can be accessed.</li>
 </ul></div>
 </div>
 </div>
@@ -383,19 +375,22 @@ content</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></div> <!-- / div.lesson-content -->
+
+
+
+      </div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="../instructor/introduction.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="../instructor/immersive-vs-panoramic.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link" href="../instructor/immersive-vs-panoramic.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link float-end" href="../instructor/degrees-of-freedom.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="../instructor/introduction.html" rel="prev">
+        <a class="chapter-link" href="../instructor/immersive-vs-panoramic.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
-          Previous: Introduction
+          Previous: Type of Content
         </a>
-        <a class="chapter-link float-end" href="../instructor/immersive-vs-panoramic.html" rel="next">
-          Next: Immersive vs... 
+        <a class="chapter-link float-end" href="../instructor/degrees-of-freedom.html" rel="next">
+          Next: Degrees of Freedom... 
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
