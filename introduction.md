@@ -21,7 +21,7 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction
+## Topics in this lesson
 
 
 This lecture covers topics related to the distribution of XR experiences or applications.
@@ -47,7 +47,6 @@ Decide why this is the case?
 
 Reflect how will you make available such experience to a user?
 
-
 - 360 panoramas/video
 - Interactive larger-scale images
 - Outdoor 360 audio recording 
@@ -66,50 +65,46 @@ as well as user-freedoms for moving within the environment.
 
 :::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::: challenge 
 
-## Figures
+## Challenge 2: How are XR experiences made available to users?
 
-You can include figures generated from R Markdown:
+Explore how each of these experiences can be made available to users?
+
+Reflect on how the distrubution platform might impact (or not) the amount 
+of potential users.
+
+:::::::::::::::::::::::: solution 
 
 
-```r
-pie(
-  c(Sky = 78, "Sunny side of pyramid" = 17, "Shady side of pyramid" = 5), 
-  init.angle = 315, 
-  col = c("deepskyblue", "yellow", "yellow3"), 
-  border = FALSE
-)
-```
+## Output
+ 
 
-<div class="figure" style="text-align: center">
-<img src="fig/introduction-rendered-pyramid-1.png" alt="pie chart illusion of a pyramid"  />
-<p class="caption">Sun arise each and every morning</p>
-</div>
-Or you can use pandoc markdown for static figures with the following syntax:
+There are many different platforms for distributing XR experiences. 
+Here is a list of the most popular ones.
 
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
+- [Meta Quest](https://www.meta.com/en-gb/experiences/)
+- [Valve Steam](https://store.steampowered.com/)
+- [VR YouTube](https://vr.youtube.com/)
+- [Facebook 360](https://www.facebook.com/Facebook360/)
 
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
+Note that they distribute content both through a web browser and 
+through a device such as a phone or headset.
 
-## Math
+Beside these platforms, XR experiences can be installed as apps
+on mobile phones through platforms such as Google and Apple apps:
 
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
+- [Apple App Store](https://apps.apple.com/)
+- [Windows App Store](https://apps.microsoft.com/store/apps)
+- [Google App Store](https://play.google.com/)
 
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
+In most of these cases, the potential users is dependent on the
+specific device they target.
 
-Cool, right?
+:::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
-
-::::::::::::::::::::::::::::::::::::::::::::::::
 
