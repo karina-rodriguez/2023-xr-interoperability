@@ -1,45 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/404.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/404.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/CODE_OF_CONDUCT.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/LICENSE.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/index.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/aio.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/instructor/404.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/degrees-of-freedom.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/instructor/CODE_OF_CONDUCT.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/distribution-3dof.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/instructor/LICENSE.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/distribution-6dof.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/instructor/index.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/distribution-of-vr.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/instructor/introduction.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/images.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/instructor/profiles.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/immersive-vs-panoramic.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/instructor/reference.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/index.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/introduction.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/404.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/profiles.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://karina-rodriguez.github.io/xr-interoperability/reference.html</loc>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/aio.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/degrees-of-freedom.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/distribution-3dof.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/distribution-6dof.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/distribution-of-vr.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/images.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/immersive-vs-panoramic.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/openvr.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/publishing-interactive-xr.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/webxr.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor/xr-interoperability.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/openvr.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/publishing-interactive-xr.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/webxr.html</loc>
+  </url>
+  <url>
+    <loc>https://karina-rodriguez.github.io/2023-xr-interoperability/xr-interoperability.html</loc>
   </url>
 </urlset>
