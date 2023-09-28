@@ -306,7 +306,7 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction</a></p>
 <hr>
-<p> Last updated on 2023-09-27 | 
+<p> Last updated on 2023-09-28 | 
         
         <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -398,7 +398,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-immersive-vs-panoramic"><p>Content from <a href="immersive-vs-panoramic.html">Types of content in XR experiences / applications</a></p>
 <hr>
-<p> Last updated on 2023-09-27 | 
+<p> Last updated on 2023-09-28 | 
         
         <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/immersive-vs-panoramic.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -464,7 +464,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-degrees-of-freedom"><p>Content from <a href="degrees-of-freedom.html">Degrees of Freedom</a></p>
 <hr>
-<p> Last updated on 2023-09-27 | 
+<p> Last updated on 2023-09-28 | 
         
         <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/degrees-of-freedom.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -535,7 +535,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-distribution-of-vr"><p>Content from <a href="distribution-of-vr.html">Distribution Platforms</a></p>
 <hr>
-<p> Last updated on 2023-09-27 | 
+<p> Last updated on 2023-09-28 | 
         
         <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/distribution-of-vr.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -563,7 +563,7 @@ amount of potential users.</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>There are many different platforms for distributing XR experiences.
 Here is a list of the most popular ones.</p>
@@ -610,7 +610,7 @@ functionality which can be accessed.</li>
 </div>
 </div></section><section id="aio-distribution-3dof"><p>Content from <a href="distribution-3dof.html">Distribution 3 DoF Experiences</a></p>
 <hr>
-<p> Last updated on 2023-09-27 | 
+<p> Last updated on 2023-09-28 | 
         
         <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/distribution-3dof.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -658,7 +658,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-tutorial"><p>Content from <a href="tutorial.html">Tutorial</a></p>
 <hr>
-<p> Last updated on 2023-09-27 | 
+<p> Last updated on 2023-09-28 | 
         
         <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/tutorial.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -675,9 +675,9 @@ basic knowledge of HTML and Javascript.</p>
 <section id="create-a-basic-web-server-image-in-docker"><h2 class="section-heading">Create a basic web server image in Docker<a class="anchor" aria-label="anchor" href="#create-a-basic-web-server-image-in-docker"></a>
 </h2>
 <hr class="half-width">
-<p>For this excercise, we will use Docker.</p>
+<p>For this exercise, we will use Docker.</p>
 <p>To start we either search in Docker Hub</p>
-<figure><img src="/fig/dockerhub.png" alt="Download my-own-apache2." class="figure mx-auto d-block"><figcaption>Search in Docker Hub for karinardz/my-own-apache2</figcaption></figure><p>Or pull a docker image fromt the command line:</p>
+<figure><img src="fig/dockerhub.png" alt="Download my-own-apache2." class="figure mx-auto d-block"><figcaption>Search in Docker Hub for karinardz/my-own-apache2</figcaption></figure><p>Or pull a docker image fromt the command line:</p>
 <pre class="console"><code>foo@bar:~$ docker pull karinardz/my-own-apache2</code></pre>
 <p>Once you pull the image you should be able to see this in your docker
 list of images</p>
@@ -689,7 +689,7 @@ karinardz/my-own-apache2           latest    38e2bbc9b07c   46 minutes ago   254
 <hr class="half-width">
 <p>To start the new server</p>
 <p>Either start the image in Docker Desktop.</p>
-<figure><img src="/fig/start.png" alt="Start my-own-apache2." class="figure mx-auto d-block"><figcaption>Start in DockerDesktop the image
+<figure><img src="fig/start.png" alt="Start my-own-apache2." class="figure mx-auto d-block"><figcaption>Start in DockerDesktop the image
 karinardz/my-own-apache2</figcaption></figure><p>Please note to add your own container name, and add a port to run the
 webserver, for example, 8080 as shown in the image.</p>
 <p>Or start the container from the command line</p>
@@ -709,7 +709,7 @@ address:</p>
 <p>This web server has been loaded with a basic html page, and some
 javascript which uses the <a href="https://developers.google.com/vr/develop/web/vrview-web" class="external-link">VR View
 for the Web</a>.</p>
-<figure><img src="/fig/localhost.png" alt="Local host with 360 image." class="figure mx-auto d-block"><figcaption>Load localhost on webserver will visualise the 360
+<figure><img src="fig/localhost.png" alt="Local host with 360 image." class="figure mx-auto d-block"><figcaption>Load localhost on webserver will visualise the 360
 image.</figcaption></figure></section><section id="modify-the-htmljavascript-code-to-add-interaction"><h2 class="section-heading">Modify the HTML/JavaScript code to add interaction<a class="anchor" aria-label="anchor" href="#modify-the-htmljavascript-code-to-add-interaction"></a>
 </h2>
 <hr class="half-width">
@@ -722,7 +722,7 @@ Logs, Inspect, Terminal, Files, Stats</p>
 filesystem in your container. Note this is only in memory, as it is not
 in your local filesystem.</p>
 <p>Using the interface, navigate to: /usr/local/apache2/htdocs</p>
-<figure><img src="/fig/editHTTP.png" alt="Edit HTML." class="figure mx-auto d-block"><figcaption>Access the HTML code for the web page.</figcaption></figure><p>To open index.html, double click on it.</p>
+<figure><img src="fig/editHTTP.png" alt="Edit HTML." class="figure mx-auto d-block"><figcaption>Access the HTML code for the web page.</figcaption></figure><p>To open index.html, double click on it.</p>
 <p>You will see the HTML code which renders the web page. In particular,
 there DIV element which allows for the 360° image to be render.</p>
 <p>For more information in tags, see <a href="https://www.w3schools.com/tags/tag_html.asp" class="external-link">HTML
@@ -763,7 +763,7 @@ documentation</a>.</p>
   Code to add title
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">HTML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -819,7 +819,7 @@ documentation</a>.</p>
   Code to add title
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">JAVASCRIPT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -922,8 +922,8 @@ any links that you are not going to use.
   "url": "https://karina-rodriguez.github.io/2023-xr-interoperability/aio.html",
   "identifier": "https://karina-rodriguez.github.io/2023-xr-interoperability/aio.html",
   "dateCreated": "2023-09-25",
-  "dateModified": "2023-09-27",
-  "datePublished": "2023-09-27"
+  "dateModified": "2023-09-28",
+  "datePublished": "2023-09-28"
 }
 
   </script><script>
