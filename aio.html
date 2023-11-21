@@ -217,7 +217,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="distribution-of-vr.html">4. Distribution Platforms</a>
+        <a href="distribution-3dof.html">4. Distribution 3 DoF Experiences</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -229,7 +229,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="distribution-3dof.html">5. Distribution 3 DoF Experiences</a>
+        <a href="tutorial.html">5. Tutorial</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -241,7 +241,19 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="tutorial.html">6. Tutorial</a>
+        <a href="distribution-of-vr.html">6. Distribution 6 DoF Experiences</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="publishing-interactive-xr.html">7. Interoperable XR</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -533,14 +545,54 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
 </div>
-</section></section><section id="aio-distribution-of-vr"><p>Content from <a href="distribution-of-vr.html">Distribution Platforms</a></p>
+</section></section><section id="aio-distribution-3dof"><p>Content from <a href="distribution-3dof.html">Distribution 3 DoF Experiences</a></p>
 <hr>
 <p> Last updated on 2023-11-21 | 
         
-        <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/distribution-of-vr.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/distribution-3dof.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
+<section id="examples-of-3dof-experiences"><h2 class="section-heading">Examples of 3DoF Experiences<a class="anchor" aria-label="anchor" href="#examples-of-3dof-experiences"></a>
+</h2>
+<hr class="half-width">
+<p>Some websites allow for accessing 360 immersive image-renders with
+suitable interfaces for the user to move using 3DoF. When they don’t
+have access to a device, such as a mobile phone, users can use the mouse
+to manipulate the virtual camera.</p>
+<p>This type of experience allows for the wider access.</p>
+<p>See the following examples:</p>
+<ul>
+<li><a href="https://www.360cities.net/" class="external-link">360 cities</a></li>
+<li><a href="https://artsandculture.google.com/project/360-videos" class="external-link">Arts
+and Culture 360 videos</a></li>
+</ul>
+<p>Beside delivering 3DoF content websites, it is also possible to
+develop applications to be installed on a device which allow interaction
+with this type of content.</p>
+</section><section id="developing-3dof-xr-experiences-on-the-web"><h2 class="section-heading">Developing 3DoF XR experiences on the web<a class="anchor" aria-label="anchor" href="#developing-3dof-xr-experiences-on-the-web"></a>
+</h2>
+<hr class="half-width">
+<p>For developing this type of experience, the best option is to use an
+existing platform, or your own code using HTML + Javascript
+libraries.</p>
+<p>This type of viewer is called a photosphere viewer as the image is
+mapped as a texture on a sphere. Most platforms will only provide the
+basic functionality to move around. Hence, custom-made code is required
+to access more complex/interactive functionality.</p>
+<p>Existing platforms include:</p>
+<ul>
+<li><a href="https://vr.youtube.com/" class="external-link">VR YouTube</a></li>
+<li><a href="https://www.facebook.com/Facebook360/" class="external-link">Facebook
+360</a></li>
+</ul>
+<p>You can also include your own viewer using existing libraries, for
+example:</p>
+<ul>
+<li><a href="https://developers.google.com/vr/develop/web/vrview-web" class="external-link">Google VR
+view</a></li>
+</ul>
+<p>These allow for rendering an image or a video on the web.</p>
 <div id="challenge-distributing-xr-experiences" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -551,7 +603,7 @@ any links that you are not going to use.
 <div class="callout-content">
 <p>Explore how various types of experiences can be distributed to reach
 a wide number of users.</p>
-<p>Reflect on how the distrubution platform might impact (or not) the
+<p>Reflect on how the distribution platform might impact (or not) the
 amount of potential users.</p>
 </div>
 </div>
@@ -608,54 +660,7 @@ functionality which can be accessed.</li>
 </ul>
 </div>
 </div>
-</div></section><section id="aio-distribution-3dof"><p>Content from <a href="distribution-3dof.html">Distribution 3 DoF Experiences</a></p>
-<hr>
-<p> Last updated on 2023-11-21 | 
-        
-        <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/distribution-3dof.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<section id="examples-of-3dof-experiences"><h2 class="section-heading">Examples of 3DoF Experiences<a class="anchor" aria-label="anchor" href="#examples-of-3dof-experiences"></a>
-</h2>
-<hr class="half-width">
-<p>Some websites allow for accessing 360 immersive image-renders with
-suitable interfaces for the user to move using 3DoF. When they don’t
-have access to a device, such as a mobile phone, users can use the mouse
-to manipulate the virtual camera.</p>
-<p>This type of experience allows for the wider access.</p>
-<p>See the following examples:</p>
-<ul>
-<li><a href="https://www.360cities.net/" class="external-link">360 cities</a></li>
-<li><a href="https://artsandculture.google.com/project/360-videos" class="external-link">Arts
-and Culture 360 videos</a></li>
-</ul>
-<p>Beside delivering 3DoF content websites, it is also possible to
-develop applications to be installed on a device which allow interaction
-with this type of content.</p>
-</section><section id="developing-3dof-xr-experiences-on-the-web"><h2 class="section-heading">Developing 3DoF XR experiences on the web<a class="anchor" aria-label="anchor" href="#developing-3dof-xr-experiences-on-the-web"></a>
-</h2>
-<hr class="half-width">
-<p>For developing this type of experience, the best option is to use an
-existing platform, or your own code using HTML + Javascript
-libraries.</p>
-<p>This type of viewer is called a photosphere viewer as the image is
-mapped as a texture on a sphere. Most platforms will only provide the
-basic functionality to move around. Hence, custom-made code is required
-to access more complex/interactive functionality.</p>
-<p>Existing platforms include:</p>
-<ul>
-<li><a href="https://vr.youtube.com/" class="external-link">VR YouTube</a></li>
-<li><a href="https://www.facebook.com/Facebook360/" class="external-link">Facebook
-360</a></li>
-</ul>
-<p>You can also include your own viewer using existing libraries, for
-example:</p>
-<ul>
-<li><a href="https://developers.google.com/vr/develop/web/vrview-web" class="external-link">Google VR
-view</a></li>
-</ul>
-<p>These allow for rendering an image or a video on the web.</p>
+</div>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
@@ -894,6 +899,139 @@ corresponding to the right.</p>
 <span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a> })<span class="op">;</span></span>
 <span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>         </span></code></pre>
 </div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</div>
+</section></section><section id="aio-distribution-of-vr"><p>Content from <a href="distribution-of-vr.html">Distribution 6 DoF Experiences</a></p>
+<hr>
+<p> Last updated on 2023-11-21 | 
+        
+        <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/distribution-of-vr.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<p>Depending on which devices you are supporting, you can publishing
+content in an application store of each device:</p>
+<ul>
+<li>
+<a href="https://store.steampowered.com/" class="external-link">Steam</a>, for headsets
+including HTC Vive or Vive Pro, HP Reverb G2</li>
+<li>
+<a href="https://www.meta.com/en-gb/experiences/" class="external-link">Meta Quest</a>,
+for headsets including Oculus Rift, Oculus Go, Oculus Quest, Samsung
+Gear VR</li>
+<li><a href="https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens" class="external-link">Microsoft
+Store</a></li>
+</ul>
+<section id="how-to-publish"><h2 class="section-heading">How to publish?<a class="anchor" aria-label="anchor" href="#how-to-publish"></a>
+</h2>
+<hr class="half-width">
+<p>To publish in one of these stores you will need to enroll to publish
+in the online store.</p>
+<p>For example, <a href="https://partner.steamgames.com/" class="external-link">Steamworks</a>
+offers tools and services for publishing VR. Steamworks offers to become
+a partner, including as a:</p>
+<ul>
+<li>Game Developer or Publisher</li>
+<li>PC Café Program, including sites such as hospitals, universities, or
+libraries.</li>
+</ul>
+<p>For Oculus, there are two paths, publishing in the OculusStore has an
+extensive approval process. This includes doing a <a href="https://developer.oculus.com/resources/publish-quest-req/" class="external-link">technical
+review</a>.</p>
+<p>The <a href="https://developer.oculus.com/manage/" class="external-link">Meta Quest
+AppLab</a> offers an alternative path.</p>
+<p>To distribute, you can share your app via a URL, providing direct
+access to the description page, and an option to purchase or install the
+app.</p>
+<p>Consider joining, if you are planning to make available your game
+after development.</p>
+</section><section id="recomendations-for-publishing-interactive-vr"><h2 class="section-heading">Recomendations for publishing interactive VR<a class="anchor" aria-label="anchor" href="#recomendations-for-publishing-interactive-vr"></a>
+</h2>
+<hr class="half-width">
+<p>VR applications usually need to meet strict guidelines to be
+considered for distribution.</p>
+<p>Examine the test plan for the <a href="https://developer.oculus.com/resources/publish-quest-req/#test-plan" class="external-link">Meta
+Quest</a>.</p>
+<p>Here are some guidelines:</p>
+<ul>
+<li>Limit the number of triangles or vertices.</li>
+<li>Less than 1-2 million per frame.</li>
+<li>Don’t always strive for photorealism, concentrate on the overall VR
+experience.</li>
+<li>Use as few textures as possible.</li>
+<li>Techniques such as texture compression can minimize texture
+bandwidth consumption.</li>
+<li>Optimize your script which handles the logic of the experience.</li>
+</ul>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ --></section></section><section id="aio-publishing-interactive-xr"><p>Content from <a href="publishing-interactive-xr.html">Interoperable XR</a></p>
+<hr>
+<p> Last updated on 2023-11-21 | 
+        
+        <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/publishing-interactive-xr.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div id="discussion1" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#discussion1"></a>
+</h3>
+<div class="callout-content">
+<p>Challenge: Interoperability</p>
+<p>What are the challenges for achieving in Virtual Reality
+applications?</p>
+</div>
+</div>
+</div>
+<section id="vr-interoperability"><h2 class="section-heading">VR Interoperability<a class="anchor" aria-label="anchor" href="#vr-interoperability"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Users want the flexibility to access content across devices.</li>
+<li>Less hassle and expenses.</li>
+<li>For content creators and distributors, it means easier and more
+cost-effective production and distribution.</li>
+<li>More opportunities for ads and promotion.</li>
+</ul></section><section id="openxr"><h2 class="section-heading">OpenXR<a class="anchor" aria-label="anchor" href="#openxr"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Developed by Khronos consortium, developer of OpenGL and OpenGL
+ES.</li>
+<li>Open standard for access to XR (AR/VR) platforms and devices.</li>
+<li>Aim to solve AR/VR fragmentation.</li>
+</ul></section><section id="webxr"><h2 class="section-heading">WebXR<a class="anchor" aria-label="anchor" href="#webxr"></a>
+</h2>
+<hr class="half-width">
+<p><a href="https://www.youtube.com/watch?app=desktop&amp;v=wPfODr2e5Xw" title="Chrome Dev Viewer" class="external-link"><img src="https://i.ytimg.com/vi/wPfODr2e5Xw/maxresdefault.jpg" alt="IMAGE ALT TEXT" class="figure"></a></p>
+<p>The WebXR Device API allow developers to read information, such as
+pose information from headset and controllers, and access hardware
+display capabilities commonly associated with Virtual Reality (VR) and
+Augmented Reality (AR) devices.</p>
+<p>It allows you develop and host VR and AR experiences on the web.</p>
+<p>It allows to:</p>
+<ul>
+<li>Driven by the W3C group</li>
+<li>Manages the output/input of devices and controllers.</li>
+<li>Render the 3D scene to the chosen device at the appropriate frame
+rate.</li>
+<li>Allows for persistency (ability to keep persistent link to 3D
+worlds).</li>
+</ul>
+<p>See more information at: <a href="https://immersiveweb.dev/" class="external-link">WebXR
+webpage</a></p>
+<p>Examples with code: <a href="https://immersive-web.github.io/webxr-samples/" class="external-link">https://immersive-web.github.io/webxr-samples/</a></p>
+<div class="section level3">
+<h3 id="xr-viewer">XR Viewer<a class="anchor" aria-label="anchor" href="#xr-viewer"></a>
+</h3>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
