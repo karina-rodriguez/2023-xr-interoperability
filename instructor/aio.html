@@ -227,7 +227,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="tutorial.html">5. Tutorial</a>
+        <a href="tutorial.html">5. 3DOF Tutorial</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -694,7 +694,7 @@ functionality which can be accessed.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></section><section id="aio-tutorial"><p>Content from <a href="tutorial.html">Tutorial</a></p>
+</section></section><section id="aio-tutorial"><p>Content from <a href="tutorial.html">3DOF Tutorial</a></p>
 <hr>
 <p> Last updated on 2023-11-28 | 
         
@@ -1328,30 +1328,84 @@ height: 768px;"></iframe>
 </h2>
 <hr class="half-width">
 <p>Download an install <a href="https://nodejs.org/en/download" class="external-link">NodeJS</a></p>
-<p>NodeJS uses a <a href="https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager" class="external-link">package
-manager</a></p>
-<!--
-It is best to start using an existing boiler plate 
-code which has been configured for Node.JS to u
-nderstand how it works and modify according to your needs, 
-for example:
-
-GitHub - Sean-Bradley/Threejs-Boilerplate: 
-A Threejs Boilerplate to aid in quick prototyping
-A Threejs Boilerplate to aid in quick prototyping. Contribute to Sean-Bradley/Threejs-Boilerplate development by creating an account on GitHub.
-GitHub
-
-So, create folder in Visual Studio Code and checkout from the github repository.
-
-Once you download the code, you can use npm to install and start:
-
-
-
-$ cd Threejs-Boilerplate
-
+<p>Node.JS uses a <a href="https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager" class="external-link">standard
+package manager</a> which is called with the command npm.</p>
+<p>To install a single package, you need to type in the console:</p>
+<pre class="console"><code>npm install &lt;package-name&gt;
+</code></pre>
+<p>You can use an existing boiler plate Three.JS code which has been
+configured for Node.JS to understand how it works and modify according
+to your needs, for example</p>
+<p><a href="https://github.com/Sean-Bradley/Threejs-Boilerplate" class="external-link">GitHub
+- Sean-Bradley/Threejs-Boilerplate</a></p>
+<p>Create a folder which you will access from an IDE, such as Visual
+Studio Code. Then clone this code from the github repository by typing
+in the console:</p>
+<pre class="console"><code>git clone https://github.com/Sean-Bradley/Threejs-Boilerplate.git
+</code></pre>
+<p>Once you download the code, you can use npm to install and start:</p>
+<pre class="console"><code>$ cd Threejs-Boilerplate
 $ npm install
+$ npm start</code></pre>
+<p>npm start runs a predefined command specified in the “start” property
+of a package’s “scripts” object.</p>
+<p>It normally creates a local webserver, e.g. <a href="http://127.0.0.1:3000" class="external-link uri">http://127.0.0.1:3000</a> where
+the website is located.</p>
+<p>Once you run this code, you should see the default example.</p>
+<figure><img src="../fig/threejs.png" alt="three.js basic ex" class="figure mx-auto d-block"><figcaption>Browser running localhost webserver with threejs
+boilerplate code</figcaption></figure></section><section id="step-3.modify-your-code-to-run-a-vr-example"><h2 class="section-heading">Step 3.Modify your code to run a VR example<a class="anchor" aria-label="anchor" href="#step-3.modify-your-code-to-run-a-vr-example"></a>
+</h2>
+<hr class="half-width">
+<p>Using the VR examples in Three.JS: <a href="https://threejs.org/examples/" class="external-link uri">https://threejs.org/examples/</a> find a VR example which
+you want to work with, such as:</p>
+<p><a href="https://threejs.org/examples/?q=vr#webxr_vr_cubes" class="external-link uri">https://threejs.org/examples/?q=vr#webxr_vr_cubes</a> and
+look at the code:</p>
+<p><a href="https://github.com/mrdoob/three.js/blob/master/examples/webxr_vr_cubes.html" class="external-link uri">https://github.com/mrdoob/three.js/blob/master/examples/webxr_vr_cubes.html</a></p>
+You can copy the code within the
+<script>
+<p>tag and include it in your client.js file. When running the example
+using $npm start you should see the new example running:</p>
+<div class="figure">
+<img src="fig/cubes.png" alt="three.js basic ex" />
+<p class="caption">Browser running localhost webserver with three.js
+cubes example</p>
+</div>
+<div id="step-4.-examine-the-code" class="section level3">
+<h3>Step 4. Examine the code</h3>
+<p>Examine the code and make any modification you want to implement
+before deploying on the server.</p>
+<p>This can include changing the type of geometry, the number or the
+material you use:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> geometry  <span class="op">=</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">BoxGeometry</span> (  <span class="fl">0.15</span> <span class="op">,</span>  <span class="fl">0.15</span> <span class="op">,</span>  <span class="fl">0.15</span>  )<span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>  (  <span class="kw">let</span>   i  <span class="op">=</span>  <span class="dv">0</span> <span class="op">;</span>  i  <span class="op">&lt;</span>  <span class="dv">200</span> <span class="op">;</span>  i  <span class="op">++</span> ) {</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span>   object  <span class="op">=</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">Mesh</span> (  geometry <span class="op">,</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">MeshLambertMaterial</span> ( {  <span class="dt">color</span> <span class="op">:</span>   <span class="bu">Math</span> <span class="op">.</span> <span class="fu">random</span> () <span class="op">*</span>  <span class="bn">0xffffff</span>  } ) )<span class="op">;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+</div>
+<div id="step-5.-upload-your-code-to-the-webserver"
+class="section level3">
+<h3>Step 5. Upload your code to the webserver</h3>
+<p>To deploy your code, you will need to copy/paste your code to the
+brighton.domains server. For this, you can upload evert file or use scp
+on the command line so that the content is copied recursively.</p>
+<p>Now, in the brighton.domains dashboard look for the Node.JS
+functionality and create a new application with the content on the
+folder.</p>
+<div class="figure">
+<img src="fig/nodejs" alt="three.js basic ex" />
+<p class="caption">Brighton domains NodeJS interface</p>
+</div>
+<p>After the application starts, you should be able to test it using a
+cardboard VR or headset through the http address.</p>
+<!--
 
-$ npm start
+
+
 
 This will run the Node.JS application and you can see the site by opening your browser and going to: http://127.0.0.1:3000
 
@@ -1407,7 +1461,8 @@ After the application starts, you should be able to test it using a cardboard VR
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></section>
+</div>
+</div></script></section></section>
 </div>
     </main>
 </div>
