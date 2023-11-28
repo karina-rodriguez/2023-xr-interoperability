@@ -260,6 +260,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush9">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading9">
+        <a href="webxr-tutorial.html">8. WebXR Tutorial</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -696,7 +708,7 @@ any links that you are not going to use.
 <p>This tutorial will allow you to create a basic locally hosted website
 which allows a user to visualise and interact with a 360° image.</p>
 <p><strong>Requirements:</strong></p>
-<p>You will need basic awarness of how a webserver works, as well as
+<p>You will need basic awareness of how a webserver works, as well as
 basic knowledge of HTML and Javascript.</p>
 <hr>
 <section id="create-a-basic-web-server-image-in-docker"><h2 class="section-heading">Create a basic web server image in Docker<a class="anchor" aria-label="anchor" href="#create-a-basic-web-server-image-in-docker"></a>
@@ -711,8 +723,11 @@ basic knowledge of HTML and Javascript.</p>
 <div class="section level3">
 <h3 id="using-brighton-domains">Using brighton.domains<a class="anchor" aria-label="anchor" href="#using-brighton-domains"></a>
 </h3>
-<p>Access the server to create a new subdomain along with an index.html
-which displays a basic hello world.</p>
+<p>Using <a href="https://brighton.domains/" class="external-link uri">https://brighton.domains/</a>, access the server to create a
+new subdomain and create a folder to serve the subdomain.</p>
+<p>For example, test.yourname.brighton.domains.</p>
+<p>In the folder, include an index.html which displays a basic hello
+world.</p>
 </div>
 <div class="section level3">
 <h3 id="using-docker">Using Docker<a class="anchor" aria-label="anchor" href="#using-docker"></a>
@@ -811,7 +826,7 @@ documentation</a>.</p>
   Code to add title
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">HTML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -867,7 +882,7 @@ documentation</a>.</p>
   Code to add title
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">JAVASCRIPT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1086,7 +1101,7 @@ VR/XR applications?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Most of the time you will want your VR/XR application to seamlessly
 operate across various devices. This will avoid you having to port the
@@ -1266,6 +1281,128 @@ Editor: <a href="https://modelviewer.dev/editor/" class="external-link">https://
 <p>It allows to use the OpenGL pipeline.</p>
 <p>ThreeJS: <a href="https://threejs.org/" class="external-link">https://threejs.org/</a>
 Fundamentals: <a href="https://threejs.org/manual/#en/fundamentals" class="external-link">https://threejs.org/manual/#en/fundamentals</a></p>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section><section id="aio-webxr-tutorial"><p>Content from <a href="webxr-tutorial.html">WebXR Tutorial</a></p>
+<hr>
+<p> Last updated on 2023-11-28 | 
+        
+        <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/webxr-tutorial.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 12 minutes </p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<hr>
+<p><strong>Aim:</strong></p>
+<p>The aim of this tutorial is to learn to implement a basic
+interoperable web-based 3D environment using WebGL.</p>
+<p>WebGL (Web Graphics Library) is a JavaScript API for rendering
+interactive 2D and 3D graphics within any compatible web browser without
+the use of plug-ins.</p>
+<p>WebGL is fully integrated with other web standards, allowing
+GPU-accelerated usage of physics and image processing and effects as
+part of the web page canvas. It uses the HTML5 canvas element.</p>
+<p>In this tutorial, you will follow a few steps to implement 3D
+environments, including support for Virtual Reality (VR), on the
+web.</p>
+<p><strong>Requirements:</strong></p>
+<p>You will need basic awareness of how a webserver works, as well as
+basic knowledge of HTML and Javascript.</p>
+<p>You can use Three.JS (<a href="https://threejs.org/" class="external-link uri">https://threejs.org/</a>) or AFrame (<a href="https://aframe.io/" class="external-link uri">https://aframe.io/</a>) for your
+application, although we’ll do an example using mostly THREE.JS.</p>
+<hr>
+<section id="step-1.-create-a-website"><h2 class="section-heading">Step 1. Create a website<a class="anchor" aria-label="anchor" href="#step-1.-create-a-website"></a>
+</h2>
+<hr class="half-width">
+<p>Using the basic <a href="tutorial.html#create-a-basic-web-server-image-in-docker">instructions
+to create a website</a>, generate basic code to run a sample
+webpage.</p>
+<p>Through this, you will be able to test your own html example, such as
+<a href="https://vrtest.kre.brighton.domains" class="external-link">this example</a> following
+the next steps:</p>
+<iframe src="https://vrtest.kre.brighton.domains" style="width: 100%; 
+height: 768px;"></iframe>
+</section><section id="step-2.-install-node.js-in-your-pc"><h2 class="section-heading">Step 2. Install Node.JS in your PC<a class="anchor" aria-label="anchor" href="#step-2.-install-node.js-in-your-pc"></a>
+</h2>
+<hr class="half-width">
+<p>Download an install <a href="https://nodejs.org/en/download" class="external-link">NodeJS</a></p>
+<p>NodeJS uses a <a href="https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager" class="external-link">package
+manager</a></p>
+<!--
+It is best to start using an existing boiler plate 
+code which has been configured for Node.JS to u
+nderstand how it works and modify according to your needs, 
+for example:
+
+GitHub - Sean-Bradley/Threejs-Boilerplate: 
+A Threejs Boilerplate to aid in quick prototyping
+A Threejs Boilerplate to aid in quick prototyping. Contribute to Sean-Bradley/Threejs-Boilerplate development by creating an account on GitHub.
+GitHub
+
+So, create folder in Visual Studio Code and checkout from the github repository.
+
+Once you download the code, you can use npm to install and start:
+
+
+
+$ cd Threejs-Boilerplate
+
+$ npm install
+
+$ npm start
+
+This will run the Node.JS application and you can see the site by opening your browser and going to: http://127.0.0.1:3000
+
+You should see the default example:
+
+Exercise 3. Modify your code to run a VR example
+
+Using the VR examples in Three.JS: https://threejs.org/examples/ find a VR example which you want to work with, such as:
+
+https://threejs.org/examples/?q=vr#webxr_vr_cubes and look at the code: https://github.com/mrdoob/three.js/blob/master/examples/webxr_vr_cubes.html
+
+You can copy the code within the <script> tag and include it in your client.js file. When running the example using $npm start you should see the new example running:
+
+
+Exercise 4. Examine the code
+
+Examine the code and make any modification you want to implement before deploying on the server. This can include changing the type of geometry, the number or the material you use:
+
+
+
+``` javascript
+
+  const geometry  =  new   THREE . BoxGeometry (  0.15 ,  0.15 ,  0.15  );
+
+
+  for  (  let   i  =  0 ;  i  <  200 ;  i  ++ ) {
+
+
+  const   object  =  new   THREE . Mesh (  geometry ,  new   THREE . MeshLambertMaterial ( {  color :   Math . random () *  0xffffff  } ) );
+
+
+```
+
+
+
+
+Excercise 5. Upload your code to the webserver
+
+To deploy your code, you will need to copy/paste your code to the brighton.domains server. For this, you can use scp on the command line so that the content is copied recursively.
+
+
+
+
+Now, in the brighton.domains dashboard look for the Node.JS functionality and create a new application with the content  on the folder.
+
+
+
+ 
+
+After the application starts, you should be able to test it using a cardboard VR or headset through the http address.
+-->
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
