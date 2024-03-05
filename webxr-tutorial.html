@@ -287,7 +287,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>WebXR Tutorial</h1>
-        <p>Last updated on 2024-02-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/karina-rodriguez/2023-xr-interoperability/edit/main/episodes/webxr-tutorial.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -353,8 +353,9 @@ of a package’s “scripts” object.</p>
 <p>It normally creates a local webserver, e.g. <a href="http://127.0.0.1:3000" class="external-link uri">http://127.0.0.1:3000</a> where
 the website is located.</p>
 <p>Once you run this code, you should see the default example.</p>
-<figure><img src="fig/threejs.png" alt="three.js basic ex" class="figure mx-auto d-block"><figcaption>Browser running localhost webserver with threejs
-boilerplate code</figcaption></figure></section><section id="step-3.modify-your-code-to-run-a-vr-example"><h2 class="section-heading">Step 3.Modify your code to run a VR example<a class="anchor" aria-label="anchor" href="#step-3.modify-your-code-to-run-a-vr-example"></a>
+<figure><img src="fig/threejs.png" alt="three.js basic ex" class="figure mx-auto d-block"><div class="figcaption">Browser running localhost webserver with threejs
+boilerplate code</div>
+</figure></section><section id="step-3.modify-your-code-to-run-a-vr-example"><h2 class="section-heading">Step 3.Modify your code to run a VR example<a class="anchor" aria-label="anchor" href="#step-3.modify-your-code-to-run-a-vr-example"></a>
 </h2>
 <hr class="half-width"><p>Using the VR examples in Three.JS: <a href="https://threejs.org/examples/" class="external-link uri">https://threejs.org/examples/</a> find a VR example which
 you want to work with, such as:</p>
@@ -365,10 +366,10 @@ You can copy the code within the
 <script>
 <p>tag and include it in your client.js file. When running the example
 using $npm start you should see the new example running:</p>
-<div class="figure">
+<div class="float">
 <img src="fig/cubes.png" alt="three.js basic ex" />
-<p class="caption">Browser running localhost webserver with three.js
-cubes example</p>
+<div class="figcaption">Browser running localhost webserver with
+three.js cubes example</div>
 </div>
 <div id="step-4.-examine-the-code" class="section level3">
 <h3>Step 4. Examine the code</h3>
@@ -377,15 +378,15 @@ before deploying on the server.</p>
 <p>This can include changing the type of geometry, the number or the
 material you use:</p>
 <div class="sourceCode" id="cb4"><pre
-class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> geometry  <span class="op">=</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">BoxGeometry</span> (  <span class="fl">0.15</span> <span class="op">,</span>  <span class="fl">0.15</span> <span class="op">,</span>  <span class="fl">0.15</span>  )<span class="op">;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>  (  <span class="kw">let</span>   i  <span class="op">=</span>  <span class="dv">0</span> <span class="op">;</span>  i  <span class="op">&lt;</span>  <span class="dv">200</span> <span class="op">;</span>  i  <span class="op">++</span> ) {</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span>   object  <span class="op">=</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">Mesh</span> (  geometry <span class="op">,</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">MeshLambertMaterial</span> ( {  <span class="dt">color</span> <span class="op">:</span>   <span class="bu">Math</span> <span class="op">.</span> <span class="fu">random</span> () <span class="op">*</span>  <span class="bn">0xffffff</span>  } ) )<span class="op">;</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>  <span class="kw">const</span> geometry  <span class="op">=</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">BoxGeometry</span> (  <span class="fl">0.15</span> <span class="op">,</span>  <span class="fl">0.15</span> <span class="op">,</span>  <span class="fl">0.15</span>  )<span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>  <span class="cf">for</span>  (  <span class="kw">let</span>   i  <span class="op">=</span>  <span class="dv">0</span> <span class="op">;</span>  i  <span class="op">&lt;</span>  <span class="dv">200</span> <span class="op">;</span>  i  <span class="op">++</span> ) {</span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a>  <span class="kw">const</span>   object  <span class="op">=</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">Mesh</span> (  geometry <span class="op">,</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">MeshLambertMaterial</span> ( {  <span class="dt">color</span> <span class="op">:</span>   <span class="bu">Math</span> <span class="op">.</span> <span class="fu">random</span> () <span class="op">*</span>  <span class="bn">0xffffff</span>  } ) )<span class="op">;</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a></span></code></pre></div>
 </div>
 <div id="step-5.-upload-your-code-to-the-webserver"
 class="section level3">
@@ -396,9 +397,9 @@ on the command line so that the content is copied recursively.</p>
 <p>Now, in the brighton.domains dashboard look for the Node.JS
 functionality and create a new application with the content on the
 folder.</p>
-<div class="figure">
+<div class="float">
 <img src="fig/nodejs" alt="three.js basic ex" />
-<p class="caption">Brighton domains NodeJS interface</p>
+<div class="figcaption">Brighton domains NodeJS interface</div>
 </div>
 <p>After the application starts, you should be able to test it using a
 cardboard VR or headset through the http address.</p>
@@ -520,8 +521,8 @@ any links that you are not going to use.
   "url": "https://karina-rodriguez.github.io/2023-xr-interoperability/webxr-tutorial.html",
   "identifier": "https://karina-rodriguez.github.io/2023-xr-interoperability/webxr-tutorial.html",
   "dateCreated": "2023-09-25",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
